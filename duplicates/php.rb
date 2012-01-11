@@ -9,10 +9,10 @@ def postgres_installed?
 end
 
 class Php < Formula
-  url 'http://www.php.net/get/php-5.3.8.tar.bz2/from/this/mirror'
+  url 'http://www.php.net/get/php-5.3.9.tar.bz2/from/this/mirror'
   homepage 'http://php.net/'
-  md5 '704cd414a0565d905e1074ffdc1fadfb'
-  version '5.3.8'
+  md5 'dd3288ed5c08cd61ac5bf619cb357521'
+  version '5.3.9'
 
   # So PHP extensions don't report missing symbols
   skip_clean ['bin', 'sbin']
@@ -185,7 +185,7 @@ end
 
 __END__
 diff -Naur php-5.3.2/ext/tidy/tidy.c php/ext/tidy/tidy.c 
---- php-5.3.2/ext/tidy/tidy.c	2010-02-12 04:36:40.000000000 +1100
+--- php-5.3.2/ext/tidy/tidy.c  2010-02-12 04:36:40.000000000 +1100
 +++ php/ext/tidy/tidy.c	2010-05-23 19:49:47.000000000 +1000
 @@ -22,6 +22,8 @@
  #include "config.h"
